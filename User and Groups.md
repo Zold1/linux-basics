@@ -46,6 +46,10 @@ Explaining syntax, will use the first account to explain
 
 ## User Control Commands
 
+At first, you must know something important:
+
+*
+
 * `whoami` print effective userid
 * `w` show who is logged on and what they are doing.
 
@@ -58,4 +62,39 @@ root@Zold:~# w
 USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
 ```
 
-* ``
+* `id` print real and effective user and group IDs
+  * `id <Username>` Select a specific account username
+
+``` console
+root@Zold:~# id
+uid=0(root) gid=0(root) groups=0(root)
+
+root@Zold:~# id zold
+uid=1000(zold) gid=1000(zold) groups=1000(zold),27(sudo),29(audio),30(dip),44(video),46(plugdev),117(netdev),1001(docker)
+```
+
+* `useradd <Username>` create a new user or update default new user information
+  add user with his name only (if you want to add a temp user with only a name,other info not required)
+* `adduser <Username>` add user with full profile and info (pass, quota, permission, etc.) **Recommended**
+
+``` console
+root@Zold:~# adduser ashraf
+Adding user `ashraf' ...
+Adding new group `ashraf' (1004) ...
+Adding new user `ashraf' (1003) with group `ashraf' ...
+Creating home directory `/home/ashraf' ...
+Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for ashraf
+Enter the new value, or press ENTER for the default
+        Full Name []: Ashraf Osaama
+        Room Number []: 10
+        Work Phone []: 01039382745
+        Home Phone []: 01139827388
+        Other []:
+Is the information correct? [Y/n] y
+root@Zold:~# su - ashraf
+ashraf@Zold:~$
+```
