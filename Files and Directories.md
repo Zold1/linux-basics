@@ -10,12 +10,40 @@ The first thing you need to know is that: Directories in Linux = Folders in Wind
   * `ls -l` get list directory contents with a long listing format
   * `ls <Directory>` specify directory which command execute on it
 
-![ls](./images/ls-1.png)
+``` console
+root@Zold:~# ls
+devops  file1.txt
+
+root@Zold:~# ls -a
+.  ..  .bash_history  .bashrc  .config  .docker  .motd_shown  .npm  .profile  .viminfo  devops
+
+root@Zold:~# ls -l
+total 8
+drwxr-xr-x 2 root root 4096 Jun 13 10:52 devops
+-rw-r--r-- 1 root root   13 Jun 13 10:54 file.txt
+
+root@Zold:~# ls -R
+.:
+devops  file.txt
+
+./devops:
+file2.txt
+
+root@Zold:~# ls -al devops
+total 8
+drwxr-xr-x 2 root root 4096 Jun 13 10:52 .
+drwx------ 6 root root 4096 Jun 13 10:54 ..
+-rw-r--r-- 1 root root    0 Jun 13 10:51 file2
+```
 
 * `cd <Directory Path>` change the working directory
 * `pwd` print name of current/working directory
 
-![pwd](./images/pwd-1.png)
+``` console
+root@Zold:~# cd /home/zold
+root@Zold:/home/zold# pwd
+/home/zold
+```
 
 ***
 
@@ -25,32 +53,75 @@ The first thing you need to know is that: Directories in Linux = Folders in Wind
 
 * `mkdir <Directory>` make directories
 
-![mkdir](./images/mkdir-1.png)
-![mkdir](./images/mkdir-2.png)
+``` console
+root@Zold:~# mkdir devops-folder
+root@Zold:~# ls
+devops-folder
+
+root@Zold:~# mkdir kubernetes terraform jenkins
+root@Zold:~# ls
+jenkins kubernetes terraform
+```
 
 * `mkdir -p <Directory1>/<Directory2>` make nested directories, if they don't exist already.
 
-![mkdir](./images/mkdir-3.png)
+``` console
+root@Zold:~# mkdir -p aws/eks/kubernetes
+root@Zold:~# ls -R
+.:
+aws
+
+./aws:
+eks
+
+./aws/eks:
+kubernetes
+
+./aws/eks/kubernetes:
+```
 
 ### Copy Directories
 
 * `cp -r <Directory> <Path>` copy directories recursively
 
-![cp](./images/cp-1.png)
+``` console
+root@Zold:~# ls
+aws  devops
+root@Zold:~# cp -r aws devops
+root@Zold:~# ls devops
+aws
+```
 
 ### Remove Directories
 
 * `rmdir <Directory>` or `rm -d <Directory>` remove empty directories
 
-![rm](./images/rm-1.png)
+``` console
+root@Zold:~# ls
+aws  devops
+root@Zold:~# rmdir aws
+root@Zold:~# ls
+devops
+```
 
 * `rm -r <Directory>` remove directories and their contents recursively
 
-![rm](./images/rm-2.png)
+``` console
+root@Zold:~# ls devops
+ansible  aws  cloud  kubectl
+root@Zold:~# rm -r devops
+root@Zold:~# ls
+root@Zold:~#
+```
 
 * `rm -rf **` remove all [directories, files, ...]
 
-![rm](./images/rm-3.png)
+``` console
+root@Zold:~# ls
+aws  azure  devops  terraform  cloud  eks  prometheus
+root@Zold:~# rm -rf **
+root@Zold:~#
+```
 
 ***
 
@@ -60,29 +131,55 @@ The first thing you need to know is that: Directories in Linux = Folders in Wind
 
 * `touch <File>` make files
 
-![touch](./images/touch-1.png)
+``` console
+root@Zold:~# touch devops{1..5}.txt
+root@Zold:~# ls
+devops1.txt  devops2.txt  devops3.txt  devops4.txt  devops5.txt
+```
 
 ### Copy Files
 
 * `cp <File> <Path>` copy file
 
-![cp](./images/cp-2.png)
+``` console
+root@Zold:~# ls
+file.txt
+root@Zold:~# cp file.txt terraform.tfvars
+root@Zold:~# ls
+file.txt  terraform.tfvars
+```
 
 ### Remove Files
 
 * `rm <File>` remove files
 
-![rm](./images/rm-4.png)
+``` console
+root@Zold:~# ls
+file.txt  terraform.tfvars
+root@Zold:~# rm file.txt terraform.tfvars
+root@Zold:~# ls
+root@Zold:~#
+```
 
 ### Show Data of Files
 
 * `cat <File>` concatenate files and print on the standard output
 
-![cat](./images/cat-1.png)
+``` console
+root@Zold:~# cat myfile.script
+Hello World!
+This is text in file.
+For testing.
+```
 
 * `file <File>` determine file type
 
-![file](./images/file-1.png)
+``` console
+root@Zold:~# ls
+aws.txt
+root@Zold:~# file aws.txt
+aws.txt:  ASCII text
+```
 
 ***
 
@@ -90,11 +187,21 @@ The first thing you need to know is that: Directories in Linux = Folders in Wind
 
 * `ln -s <File Path> <Link Name>` make links between files
 
-![ln](./images/ln-1.png)
+``` console
+root@Zold:~# ln -s /home/zold/script.sh script-link
+root@Zold:~# ls
+script-link
+```
 
 * `unlink <Link>` remove link
 
-![unlink](./images/unlink-1.png)
+``` console
+root@Zold:~# ls
+script-link
+root@Zold:~# unlink script-link
+root@Zold:~# ls
+root@Zold:~#
+```
 
 ***
 
@@ -102,4 +209,14 @@ The first thing you need to know is that: Directories in Linux = Folders in Wind
 
 * `mv <Old File> <New File>` move (rename) [files, directories, ...]
 
-![mv](./images/mv-1.png)
+``` console
+root@Zold:~# ls
+devops-folder  file1.txt
+root@Zold:~# mv file1.txt file2.txt
+root@Zold:~# ls
+devops-folder  file2.txt
+
+root@Zold:~# mv file2.txt devops-folder
+root@Zold:~# ls devops-folder
+file2.txt
+```
