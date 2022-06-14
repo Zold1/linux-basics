@@ -48,8 +48,11 @@ Explaining syntax, will use the first account to explain
 
 At first, you must know something important:
 In the commands to add, modify, or delete a user or group, you will find two different commands for the same thing, for example adding a user you will find `useradd` & `adduser` so what is the different between those?
+
 `useradd` is native binary compiled with the system. But, `adduser` is a perl script which uses `useradd` binary in back-end.
+
 `adduser` is more user friendly and interactive than its back-end `useradd`. There's no difference in features provided.
+
 also `adduser` is a wrapper for `useradd`.
 
 * `whoami` print effective userid
@@ -65,7 +68,7 @@ USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
 ```
 
 * `id` print real and effective user and group IDs
-  * `id <Username>` Select a specific account username
+* `id <Username>` Select a specific account username
 
 ``` console
 root@Zold:~# id
@@ -75,7 +78,7 @@ root@Zold:~# id zold
 uid=1000(zold) gid=1000(zold) groups=1000(zold),27(sudo),29(audio),30(dip),44(video),46(plugdev),117(netdev),1001(docker)
 ```
 
-* `adduser <Username>` add user with full profile and info (pass, quota, permission, etc.)
+* `adduser <Username>` add a new user to your current Linux machine
 
 ``` console
 root@Zold:~# adduser ashraf
@@ -98,3 +101,18 @@ Is the information correct? [Y/n] y
 root@Zold:~# su - ashraf
 ashraf@Zold:~$
 ```
+
+* `deluser <Username>` delete user
+
+``` console
+root@Zold:~# deluser ali
+Removing user `ali' ...
+Done.
+root@Zold:~#
+```
+
+* `su - <username>` switch user which login to machine
+
+* `su -` or `sudo -i` login to root user
+
+* `exit` Logout
