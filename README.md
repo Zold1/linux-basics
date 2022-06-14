@@ -8,6 +8,6 @@ Browse summary:
 * [Linux File System](./Linux%20File%20System.md)
 * [Files and Directories](./Files%20and%20Directories.md)
 * [User and Groups](./User%20and%20Groups.md)
-* [User and Groups](./Archive.md)
+* [Archive](./Archive.md)
 
 If you find an error or would like to suggest something, feel free to contact me [My Twitter](https://twitter.com/__Zold) - [My Facebook](https://www.facebook.com/IamZold/)

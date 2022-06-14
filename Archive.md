@@ -6,7 +6,7 @@ we will use an archiving utility `tar` and `zip`
 
 ## Tar
 
-* `tar -czvf <Tar Name> <Directory>` compressed file/directory
+* `tar -czvf <Tar Name> <Directory>` compresse file/directory
 
 ``` console
 root@Zold:~# ls devops
@@ -20,8 +20,8 @@ devops/aws
 devops/ansible
 ```
 
-* `tar -xzvf <Tar File>`
-* `tar -xzvf <Tar File> -C <Path>`
+* `tar -xzvf <Tar File>` uncompresse tar file
+* `tar -xzvf <Tar File> -C <Path>` uncompresse tar file and putting the content in a specific path
 
 ``` console
 root@Zold:~# ls
@@ -45,8 +45,8 @@ ansible  aws  kubernetes  prometheus  terraform
 
 First we need to install package `sudo apt install zip`
 
-* `zip <Zip Name>` compressed file/empty directory
-* `zip -r <Zip Name> <Directory>` compressed directory
+* `zip <Zip Name>` compresse file/empty directory
+* `zip -r <Zip Name> <Directory>` compresse directory
 
 ``` console
 root@Zold:~# ls devops
@@ -60,7 +60,7 @@ root@Zold:~# zip -r devops-package.zip devops
   adding: devops/ansible (stored 0%)
 ```
 
-* `unzip <Zip File>` uncompressed zip file
+* `unzip <Zip File>` uncompresse zip file
 
 ``` console
 root@Zold:~# rm -rf devops
