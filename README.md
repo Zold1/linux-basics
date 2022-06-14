@@ -9,5 +9,6 @@ Browse summary:
 * [Files and Directories](./Files%20and%20Directories.md)
 * [User and Groups](./User%20and%20Groups.md)
 * [Archive](./Archive.md)
+* [Best Practices](./Best%20Practices.md)
 
 If you find an error or would like to suggest something, feel free to contact me [My Twitter](https://twitter.com/__Zold) - [My Facebook](https://www.facebook.com/IamZold/)
