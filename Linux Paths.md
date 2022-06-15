@@ -19,7 +19,7 @@ Some examples of absolute path:
 
 ## What is the relative path?
 
-Relative path is defined as path related to the present working directory(pwd). Suppose I am located in /home/imran and I want to change directory to /home/imran/linux-practices. I can use relative path concept to change directory to linux-practices and also devopsdir directory.
+Relative path is defined as path related to the present working directory(pwd). Suppose I am located in /home/zold and I want to change directory to /home/imran/linux-basics. I can use relative path concept to change directory to linux-basics and also devopsdir directory.
 
 ``` console
 zold@Zold:~$ pwd
@@ -33,6 +33,9 @@ zold@Zold:~/linux-admin1$ ls
  Filters.md                 'Package Management.md'   'User and Groups.md'
 zold@Zold:~/linux-admin1$ pwd
 /home/zold/linux-admin1
+zold@Zold:~/linux-admin1$ cd devopsdir
+zold@Zold:~/linux-admin1/devopsdir$ pwd
+/home/zold/linux-admin1/devopsdir
 ```
 
 > If you see all these paths did not start with / directory.
