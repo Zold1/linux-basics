@@ -1,4 +1,4 @@
-# Linux Admin 1
+# Linux Basics
 
 This is a complete summary of the foundational Linux concepts and core tasks.
 
