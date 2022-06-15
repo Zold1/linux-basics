@@ -73,15 +73,21 @@ From user’s point of view, there isn’t much difference in these tools. The R
 ### DEB or .deb (Debian based softwares)
 
 DEB is the extension of the Debian software package format and the most often used name for such binary packages. DEB was developed by Bedian.
+
 **Example:** Google chrome software
+
 **Package name:** google-chrome-stable_current_amd64.deb
+
 **Installation:** dpkg -i google-chrome-stable_current_amd64.deb
 
 ### RPM or .rpm (Red Hat based softwares.)
 
 It is a package management system. The name RPM variously refers to the .rpm file format, files in this format, software packaged in such files, and the package manager itself. RPM was intended primarily for Linux distributions; the file format is the baseline package format of the Linux Standard Base. RPM was developed by Community & **Red Hat**.
+
 **Example:** Google chrome software
+
 **Package Name:** google-chrome-stable-57.0.2987.133-1.x86_64.rpm
+
 **Installation:** rpm -ivh google-chrome-stable-57.0.2987.133-1.x86_64.rpm
 
 **Note:** You will also encounter diffrent commands, packages and service names while using both kinds of distros
