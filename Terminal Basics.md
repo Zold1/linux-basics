@@ -141,9 +141,55 @@ drvfs           119G   69G   50G  58% /mnt/c
 drvfs           1.9T  612G  1.3T  33% /mnt/d
 ```
 
-* `uptime` Tell how long the system has been running.
+* `uptime` tell how long the system has been running.
 
 ``` console
 zold@Zold:~$ uptime
  10:00:15 up 10 min,  0 users,  load average: 0.00, 0.00, 0.00
 ```
+
+* `sudo reboot` reboot system
+
+***
+
+## New command?
+
+by `<Command> --help` or `<Command> -h` you can learn how to use any command you will see
+
+**Example:** `chown` command, if you don't know how to use it, simply we will ask the terminal
+
+``` console
+zold@Zold:~$ chown --help
+Usage: chown [OPTION]... [OWNER][:[GROUP]] FILE...
+  or:  chown [OPTION]... --reference=RFILE FILE...
+Change the owner and/or group of each FILE to OWNER and/or GROUP.
+With --reference, change the owner and group of each FILE to those of RFILE.
+
+  -c, --changes          like verbose but report only when a change is made
+  -f, --silent, --quiet  suppress most error messages
+  -v, --verbose          output a diagnostic for every file processed
+      --dereference      affect the referent of each symbolic link (this is
+                         the default), rather than the symbolic link itself
+  -h, --no-dereference   affect symbolic links instead of any referenced file
+                         (useful only on systems that can change the
+                         ownership of a symlink)
+      --from=CURRENT_OWNER:CURRENT_GROUP
+                         change the owner and/or group of each file only if
+                         its current owner and/or group match those specified
+                         here.  Either may be omitted, in which case a match
+                         is not required for the omitted attribute
+      --no-preserve-root  do not treat '/' specially (the default)
+      --preserve-root    fail to operate recursively on '/'
+      --reference=RFILE  use RFILE's owner and group rather than
+                         specifying OWNER:GROUP values
+  -R, --recursive        operate on files and directories recursively
+```
+
+***
+
+## Shortcuts
+
+* **Ctrl + C** or **Ctrl + Z**: stop running task in terminal
+* **Ctrl + R**: search terminal history
+* **Ctrl + Shift + C**: copy text
+* **Ctrl + Shift + V**: paste text
