@@ -1,10 +1,8 @@
-# Files and Directories Commands
+# Files and Directories
 
 ## Directory Path Commands
 
 The first thing you need to know is that: Directories in Linux = Folders in Windows
-
-The second thins is path, what is it? path is a unique location to a file or a folder in a file system of an OS
 
 * `ls` get list directory contents
   * `ls -a` don't ignore hidden contents which starting with .
