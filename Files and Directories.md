@@ -185,6 +185,8 @@ aws.txt:  ASCII text
 
 ## Links
 
+Links in Linux = Shortcuts in Windows
+
 * `ln -s <File Path> <Link Name>` make links between files
 
 ``` console
