@@ -1,5 +1,8 @@
 # Vim Editor
 
+This is command mode editor for files. Other editors in Linux are emacs, gedit
+vi editor is most popular
+
 * install vim `sudo apt install vim` or `sudo yum install vim -y`
 * `vim script.sh` open file in vim
 
@@ -19,6 +22,8 @@ Key | Mode
 --- | ----
 i   | for switching to insert mode
 ESC | for switching to command mode
+
+* **Note:** When you open the vim editor, it will be in the command mode by default.
 
 ***
 
