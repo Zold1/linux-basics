@@ -16,6 +16,8 @@ Browse summary:
 * [Filters](./Filters.md)
 * [Redirections](./Redirections.md)
 * [Archive](./Archive.md)
+* [Services](./Services.md)
+* [Processes](./Processes.md)
 * [Networking Commands](./Networking%20Commands.md)
 * [SSH](./SSH.md)
 * [Best Practices](./Best%20Practices.md)

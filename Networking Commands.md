@@ -56,18 +56,6 @@ PING www.google.com (142.251.37.36) 56(84) bytes of data.
 64 bytes from mrs09s13-in-f4.1e100.net (142.251.37.36): icmp_seq=4 ttl=116 time=84.7 ms
 ```
 
-* `ps aux` report a snapshot of the current processes.
-
-``` console
-zold@Zold:~$ ps aux
-USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root         1  0.2  0.0   2464  1652 ?        Sl   10:21   0:04 /init
-root        68  0.0  0.0   2464   452 ?        Ss   10:22   0:00 /init
-root        69  0.0  0.0   2464   452 ?        S    10:22   0:00 /init
-zold        70  0.0  0.2  10040  4984 pts/0    Ss   10:22   0:00 -bash
-zold       566  0.0  0.1  10616  3300 pts/0    R+   10:47   0:00 ps aux
-```
-
 * `route` show / manipulate the IP routing table
 
 ``` console

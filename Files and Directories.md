@@ -161,30 +161,7 @@ root@Zold:~# ls
 root@Zold:~#
 ```
 
-### Show Data of Files
-
-* `cat <File>` concatenate files and print on the standard output
-
-``` console
-root@Zold:~# cat myfile.script
-Hello World!
-This is text in file.
-For testing.
-```
-
-* `more` read large file page by page
-* `b` go back one page
-* **SPACE** go to the next page in accordance with the terminal’s size
-
-``` console
-root@Zold:~# more index.html
-```
-
-* `less` read file line by line
-
-``` console
-root@Zold:~# less script.sh
-```
+### File Type
 
 * `file <File>` determine file type
 
