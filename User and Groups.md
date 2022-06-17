@@ -1,5 +1,17 @@
 # User and Groups
 
+## Important Points
+
+* Users and groups are used to control access to files and resources
+* Users login to the system by supplying their username and password
+* Every file on the system is owned by a user and associated with a group
+* Every process has an owner and group affilition, and can only access the resources it's owner or group can access
+* Every user of the system is assigned a unique user ID number (the UID)
+* Users name and UID are stored in **/etc/passwd**
+* User's password is stored in **/etc/shadow**
+* Users are assigned a **home directory** and a program that is run when they login (**Usually a shell**)
+* Users cannot read, write or execute each other's files without permission.
+
 linux there are 3 types of users
 
 * Super user or root user
@@ -111,8 +123,30 @@ Done.
 root@Zold:~#
 ```
 
+* `useradd <Username>` add user
+* `userdel <Username>` delete user
+* `userdel -r <Username>` delete user with home dir
+* `usermod [OPTIONS] <group> <username>` modify a user account
+  * `usermod -g devops tom` Make devops primary group of user “tom”
+  * `usermod -aG admins aws` Add user to group
+* `gpasswd -d <username> <group>` Remove user from group
+* `passwd <Username>` Change password [if logined root]
+* `passwd` Change password [if logined user]
+
 * `su - <username>` switch user which login to machine
-
 * `su -` or `sudo -i` login to root user
-
 * `exit` Logout
+
+## Group Control Commands
+
+* `cat /etc/group` get all groups
+* `groupadd <Username>` Add group
+* `groupdel <Username>` Delete group
+* `groups` Groups of current user
+* `groups <Username>` Groups of username
+
+## Sudo
+
+allows a permitted user to execute a command as the superuser or another user, as specified by the security policy
+
+* **Example:** `sudo adduser admin`
