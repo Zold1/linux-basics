@@ -149,4 +149,26 @@ root@Zold:~#
 
 allows a permitted user to execute a command as the superuser or another user, as specified by the security policy
 
-* **Example:** `sudo adduser admin`
+``` console
+zold@Zold:~$ adduser salah
+adduser: Only root may add a user or group to the system.
+
+zold@Zold:~$ sudo adduser salah
+[sudo] password for zold:
+Adding user `salah' ...
+Adding new group `salah' (1002) ...
+Adding new user `salah' (1001) with group `salah' ...
+Creating home directory `/home/salah' ...
+Copying files from `/etc/skel' ...
+New password:
+Retype new password:
+passwd: password updated successfully
+Changing the user information for salah
+Enter the new value, or press ENTER for the default
+        Full Name []:
+        Room Number []:
+        Work Phone []:
+        Home Phone []:
+        Other []:
+Is the information correct? [Y/n]
+```
