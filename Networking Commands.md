@@ -119,3 +119,7 @@ Address: 142.251.37.36
 Name:   www.google.com
 Address: 2a00:1450:4006:807::2004
 ```
+
+[Next: SSH](./SSH.md)
+
+[Prev: Processes](./Processes.md)

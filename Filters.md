@@ -52,3 +52,7 @@ root@Zold:~# less script.sh
 * `sed ‘s/<old>/<new>/gi’ <file>` replace word in a file
 * `sed -i ‘s/<old>/<new>/gi’ <file>` replace word without printing in console
 * `sed -i ‘s/root/boot/gi’ testdir/*` replace word in all files in directory
+
+[Next: Redirections](./Redirections.md)
+
+[Prev: Vim Editor](./Vim%20Editor.md)

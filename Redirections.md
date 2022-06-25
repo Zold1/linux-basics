@@ -19,3 +19,7 @@ Redirection is a process where we can copy the output of any command(s), file(s)
 * `grep -R boot * | tail -2`
 * `grep -R boot * | tail -2 | grep fun`
 * `grep -R boot * | tail -2 | grep fun >> /tmp/sysinfo.log`
+
+[Next: Archive](./Archive.md)
+
+[Prev: Filters](./Filters.md)

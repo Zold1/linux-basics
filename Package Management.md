@@ -54,3 +54,7 @@ CentOS                 | rpm            | yum
 * `wget <lint_url>` download package via `wget`
 * `dpkg -i <name_of_package>` install package
 * `dpkg -r <name_of_package>` delete package
+
+[Next: Vim Editor](./Vim%20Editor.md)
+
+[Prev: File Permissions](./File%20Permissions.md)

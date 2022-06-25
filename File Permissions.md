@@ -96,3 +96,7 @@ Examples:
 * `chmod g+w <file>` add write permession for group
 * `chmod -rx <file>` remove read & execute for all [user, group, others]
 * `chmod 750 <file>` add permessions by numbers
+
+[Next: Package Management](./Package%20Management.md)
+
+[Prev: User and Groups](./User%20and%20Groups.md)

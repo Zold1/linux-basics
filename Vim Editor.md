@@ -93,3 +93,7 @@ Command           | Explain
 `:e <Other File>` | to edit a different file
 
 **Note:** For learn every thing about vim write `vimtutor` in console and read the documation
+
+[Next: Filters](./Filters.md)
+
+[Prev: Package Management](./Package%20Management.md)

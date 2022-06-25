@@ -36,3 +36,5 @@
 * Disable root logins via SSH
   * Can be configured here: `/etc/ssh/sshd_config`
   * Login with a normal user and su to root
+
+[Prev: SSH](./SSH.md)

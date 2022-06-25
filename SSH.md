@@ -99,3 +99,7 @@ zold@devops:~$ scp test.sh root@159.89.14.94:/root
 ``` console
 zold@devops:~$ scp -i .ssh/id_rsa test.sh root@159.89.14.94:/root
 ```
+
+[Next: Best Practices](./Best%20Practices.md)
+
+[Prev: Networking Commands](./Networking%20Commands.md)
