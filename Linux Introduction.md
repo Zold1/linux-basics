@@ -91,3 +91,5 @@ It is a package management system. The name RPM variously refers to the .rpm fil
 **Installation:** rpm -ivh google-chrome-stable-57.0.2987.133-1.x86_64.rpm
 
 **Note:** You will also encounter diffrent commands, packages and service names while using both kinds of distros
+
+[Next: Terminal Basics](./Terminal%20Basics.md)

@@ -28,3 +28,7 @@ zold       566  0.0  0.1  10616  3300 pts/0    R+   10:47   0:00 ps aux
 * `kill 3021 3022 3023` kill multi
 * `ps -ef | grep httpd | grep -v ‘auto’ | aws ‘{print $2}’`
 * `ps -ef | grep httpd | grep -v ‘auto’ | aws ‘{print $2}’ | xargs kill -9`
+
+[Next: Networking Commands](./Networking%20Commands.md)
+
+[Prev: Services](./Services.md)

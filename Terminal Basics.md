@@ -193,3 +193,7 @@ With --reference, change the owner and group of each FILE to those of RFILE.
 * **Ctrl + R**: search terminal history
 * **Ctrl + Shift + C**: copy text
 * **Ctrl + Shift + V**: paste text
+
+[Next: Linux Paths](./Linux%20Paths.md)
+
+[Prev: Linux Introduction](./Linux%20Introduction.md)

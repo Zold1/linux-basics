@@ -172,3 +172,6 @@ Enter the new value, or press ENTER for the default
         Other []:
 Is the information correct? [Y/n]
 ```
+[Next: File Permissions](./File%20Permissions.md)
+
+[Prev: Files and Directories](./Files%20and%20Directories.md)

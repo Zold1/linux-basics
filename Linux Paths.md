@@ -39,3 +39,7 @@ zold@Zold:~/linux-basics/devopsdir$ pwd
 ```
 
 > If you see all these paths did not start with / directory.
+
+[Next: Linux File System](./Linux%20File%20System.md)
+
+[Prev: Terminal Basics](./Terminal%20Basics.md)

@@ -10,3 +10,7 @@
 
 * `sudo reboot` system reboot
   the package will be inactive and you need to active it
+
+[Next: Processes](./Processes.md)
+
+[Prev: Archive](./Archive.md)
