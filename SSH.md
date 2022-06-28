@@ -86,6 +86,8 @@ zold@devops:~$ ssh root@159.89.14.94
 root@ubuntu-s-1vcpu-1gb:~# 
 ```
 
+***
+
 ## Copy File to Remote Server
 
 * `scp <file> <username>@<ip>:<path>`
