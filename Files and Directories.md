@@ -2,7 +2,7 @@
 
 ## Directory Path Commands
 
-The first thing you need to know is that: Directories in Linux = Folders in Windows
+> The first thing you need to know is that: Directories in Linux = Folders in Windows
 
 * `ls` get list directory contents
   * `ls -a` don't ignore hidden contents which starting with .
