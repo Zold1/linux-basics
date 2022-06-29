@@ -28,4 +28,5 @@ boot  etc  init  lib32  libx32  media       opt  root  sbin  srv   tmp  var
 * `/media` and `/mnt` a temporary mountpoint for regular filesystems (as in not removable media) that can be used while the administrator is repairing or working on a filesystem.
 
 [Next: Files and Directories](./Files%20and%20Directories.md)
+
 [Prev: Linux Paths](./Linux%20Paths.md)
