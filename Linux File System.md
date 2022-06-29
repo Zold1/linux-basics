@@ -18,19 +18,14 @@ boot  etc  init  lib32  libx32  media       opt  root  sbin  srv   tmp  var
     * `/usr/local/bin` packages commands will be here
     * `/usr/local/lib` packages will be here
 * `/opt` libraries and packages that you will download will be here too
-  
-  So what is the diffrent between `/opt` and `/usr/local`?
-
-  `/opt` it be here packages that do not divide their components unlike `/usr/local`
-
+  * what is the diffrent between `/opt` and `/usr/local`? `/opt` it be here packages that do not divide their components unlike `/usr/local`
 * `/boot` contains the static bootloader and kernel executable and configuration files required to boot a Linux computer.
 * `/etc` contains the local system configuration files for the host computer.
 * `/dev` contains the device files for every hardware device attached to the system, ex: keyboard, mouse, camera ...etc
 * `/var` Variable data files are stored here. This can include things like log files, MySQL, web server data files, email inboxes .... etc
-  for example `/var/cache` contains cache data from packages
+  * for example `/var/cache` contains cache data from packages
 * `/tmp` temporary directory. used by the operating system and many programs to store temporary files.
 * `/media` and `/mnt` a temporary mountpoint for regular filesystems (as in not removable media) that can be used while the administrator is repairing or working on a filesystem.
 
 [Next: Files and Directories](./Files%20and%20Directories.md)
-
 [Prev: Linux Paths](./Linux%20Paths.md)
