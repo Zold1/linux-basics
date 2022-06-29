@@ -26,11 +26,7 @@ zold@Zold:~$ pwd
 /home/zold
 zold@Zold:~$ cd linux-basics
 zold@Zold:~/linux-basics$ ls
- Archive.md                 'Linux File System.md'     README.md            'Vim Editor.md'
-'Best Practices.md'         'Linux Introduction.md'    Redirections.md       linux_architecture.jpg
-'File Permissions.md'       'Linux Paths.md'           SSH.md
-'Files and Directories.md'  'Networking Commands.md'  'Terminal Basics.md'
- Filters.md                 'Package Management.md'   'User and Groups.md'
+ devopsdir
 zold@Zold:~/linux-basics$ pwd
 /home/zold/linux-basics
 zold@Zold:~/linux-basics$ cd devopsdir
