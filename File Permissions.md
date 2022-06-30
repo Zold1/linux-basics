@@ -23,7 +23,7 @@ Let’s see file permissions in Linux with examples by `ls -l` command:
 ``` console
 zold@Zold:~/linux-admin1$ ls -l
 total 92
--rw-rw-r-- 1 zold zold  1377 Jun 14 16:10 'File Permissions.md'
+-rw-rw-r-- 1 zold devops  1377 Jun 14 16:10 'File Permissions.md'
 ```
 
 Here, we have highlighted '-rw-rw-r--' and this weird looking code is the one that tells us about the Unix permissions given to the owner, user group and the world.
@@ -51,20 +51,20 @@ The characters are pretty easy to remember.
 
 Let us look at it this way.
 
-The first part of the code is ‘rw-‘. This suggests that the owner ‘Home’ can:
+The first part of the code is 'rw-'. This suggests that the owner 'zold' can:
 
 * Read the file
 * Write or edit the file
-* He cannot execute the file since the execute bit is set to ‘-‘.
+* He cannot execute the file since the execute bit is set to '-'.
 
-By design, many Linux distributions like Fedora, CentOS, Ubuntu, etc. will add users to a group of the same group name as the user name. Thus, a user ‘tom’ is added to a group named ‘tom’.
+By design, many Linux distributions like Fedora, CentOS, Ubuntu, etc. will add users to a group of the same group name as the user name. Thus, a user 'zold' is added to a group named 'devops'.
 
-The second part is ‘rw-‘. It for the user group ‘Home’ and group-members can:
+The second part is 'rw-'. It for the user group 'devops' and group-members can:
 
 * Read the file
 * Write or edit the file
 
-The third part is for the world which means any user. It says ‘r–‘. This means the user can only:
+The third part is for the world which means any user. It says 'r–-'. This means the user can only:
 
 * Read the file
 
@@ -77,7 +77,7 @@ The third part is for the world which means any user. It says ‘r–‘. This m
 * `chown <user> <file>` change user owner only
 * `chgrp <group> <file>` Change group owner only
 
-**Note:** For debian use : instead of .
+**Note:** For debian use `:` instead of `.`
 
 **Example:** `chown zold:devops script.sh`
 
