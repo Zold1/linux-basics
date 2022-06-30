@@ -56,6 +56,8 @@ Explaining syntax, will use the first account to explain
 * `/root` home directory
 * `/bin/bash` shell
 
+***
+
 ## User Control Commands
 
 * `whoami` print effective userid
@@ -111,45 +113,91 @@ ashraf@Zold:~$
 * `userdel -r <Username>` Files in the user's home directory will be removed along with the home directory itself and the user's mail spool
 
 ``` console
-
+zold@Zold:~$ sudo userdel -r amira
+zold@Zold:~$ su - amira
+su: user amira does not exist
 ```
 
-* `usermod [OPTIONS] <group> <username>` modify a user account
-  * `usermod -g devops tom` Make devops primary group of user “tom”
-  * `usermod -aG admins aws` Add user to group
+* `passwd` Change password of effective user
+* `passwd <Username>` Change password of specific user
 
 ``` console
-
-```
-
-* `gpasswd -d <username> <group>` Remove user from group
-
-``` console
-
-```
-
-* `passwd <Username>` Change password [if logined root]
-* `passwd` Change password [if logined user]
-
-``` console
-
+zold@Zold:~$ sudo passwd salah
+New password:
+Retype new password:
+passwd: password updated successfully
 ```
 
 * `su - <username>` switch user which login to machine
 * `su -` or `sudo -i` login to root user
-* `exit` Logout
+* `exit` logout
 
 ``` console
-
+zold@Zold:~$ su - ahmed
+Password:
+ahmed@Zold:~$ exit
+logout
+zold@Zold:~$
 ```
+
+***
 
 ## Group Control Commands
 
 * `cat /etc/group` get all groups
-* `groupadd <Username>` Add group
-* `groupdel <Username>` Delete group
-* `groups` Groups of current user
-* `groups <Username>` Groups of username
+* `groups` Groups of effective user
+* `groups <Username>` Groups of specific user
+
+``` console
+zold@Zold:~$ cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog,zold
+tty:x:5:syslog
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+
+zold@Zold:~$ groups
+zold adm dialout cdrom floppy sudo audio dip video plugdev netdev docker
+```
+
+* `groupadd <Username>` and `addgroup <Username>` create a new group
+
+On most distribution `adduser` and `addgroup` are interactive 'convenience' wrappers around the commands `useradd` and `groupadd`.
+
+* `groupdel <Username>` or `delgroup <Username>` delete a group
+
+``` console
+zold@Zold:~$ sudo addgroup devops
+[sudo] password for zold:
+Adding group `devops' (GID 1004) ...
+Done.
+
+zold@Zold:~$ sudo delgroup devops
+Removing group `devops' ...
+Done.
+```
+
+***
+
+## User with Group Commands
+
+* `usermod [OPTIONS] <group> <username>` modify a user account
+  * `usermod -g devops tom` Make 'devops' primary group of user 'tom'
+  * `usermod -aG admins aws` Add 'aws' user to 'admin' group
+* `gpasswd -d <username> <group>` Remove user from group
+
+``` console
+zold@Zold:~$ sudo usermod -aG devops zold
+zold@Zold:~$ sudo gpasswd -d zold devops
+Removing user zold from group devops
+```
+
+***
 
 ## Sudo
 
