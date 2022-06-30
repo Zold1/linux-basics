@@ -107,28 +107,41 @@ root@Zold:~# su - ashraf
 ashraf@Zold:~$
 ```
 
-* `deluser <Username>` delete user
+* `userdel <Username>` delete a user account and related files
+* `userdel -r <Username>` Files in the user's home directory will be removed along with the home directory itself and the user's mail spool
 
 ``` console
-root@Zold:~# deluser ali
-Removing user `ali' ...
-Done.
-root@Zold:~#
+
 ```
 
-* `useradd <Username>` add user
-* `userdel <Username>` delete user
-* `userdel -r <Username>` delete user with home dir
 * `usermod [OPTIONS] <group> <username>` modify a user account
   * `usermod -g devops tom` Make devops primary group of user “tom”
   * `usermod -aG admins aws` Add user to group
+
+``` console
+
+```
+
 * `gpasswd -d <username> <group>` Remove user from group
+
+``` console
+
+```
+
 * `passwd <Username>` Change password [if logined root]
 * `passwd` Change password [if logined user]
+
+``` console
+
+```
 
 * `su - <username>` switch user which login to machine
 * `su -` or `sudo -i` login to root user
 * `exit` Logout
+
+``` console
+
+```
 
 ## Group Control Commands
 
