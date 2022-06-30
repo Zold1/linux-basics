@@ -81,11 +81,9 @@ root@Zold:~# id zold
 uid=1000(zold) gid=1000(zold) groups=1000(zold),27(sudo),29(audio),30(dip),44(video),46(plugdev),117(netdev),1001(docker)
 ```
 
-* `useradd <Username>`
-* `adduser <Username>` add a new user to your current Linux machine
+* `useradd <Username>` and `adduser <Username>` add a new user to your current Linux machine
 
-> `useradd` vs `adduser` ? `useradd` is native binary compiled with the system. But, `adduser` is a perl script which uses `useradd` binary in back-end.
-> `adduser` is more user friendly and interactive than its back-end `useradd`. There's no difference in features provided.
+`useradd` vs `adduser` ? `useradd` is native binary compiled with the system. But, `adduser` is a perl script which uses `useradd` binary in back-end. also `adduser` is more user friendly and interactive than its back-end `useradd`. There's no difference in features provided.
 
 ``` console
 root@Zold:~# adduser ashraf
