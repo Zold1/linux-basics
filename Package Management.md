@@ -13,23 +13,16 @@ CentOS                 | rpm            | yum
 
 ***
 
-## YUM Command [CentOS]
+## CentOS Distribution
+
+### yum command
 
 * `yum update && yum upgrade` two commands you can use to keep all of your packages up to date in CentOS Linux distribution.
 * `yum install <Package>` download & install package
-  * `yum install <Package> -y` Automatically answer yes for all questions.
-* `yum remove <Package>` Remove package from system
-* `yum search <Package>` Search in yum repositoy
+  * `yum install <Package> -y` automatically answer yes for all questions.
+* `yum remove <Package>` remove installed package from system
+* `yum search <Package>` search in yum repositoy
 * `yum clean all` clean local cache
-
-## RPM Command [CentOS]
-
-* `curl <Url of Package RPM> -o <File Name on System>` Download Package
-  * `curl https://rpmfind.net/linux/centos-stream/9-stream/BaseOS/x86_64/os/Packages/tree-1.8.0-6.el9.x86_64.rpm -o tree-1.8.0-6.el9.x86_64.rpm`
-* `rpm -ivh tree-1.8.0-6.el9.x86_64.rpm` Install Package
-* `rpm -e tree-1.8.0-6.el9.x86_64.rpm` Delete rpm package
-* `rpm -qa` → All rpms
-* `rpm -qa | grep tree` Get package from all packages
 
 **Example** install nginx:
 
@@ -37,25 +30,37 @@ CentOS                 | rpm            | yum
 * `yum install epel-release -y`
 * `yum install nginx`
 
+### rpm command
+
+First download the package via `wget` or `curl`
+
+Then `rpm` commands:
+
+* `rpm -ivh <Package Name>` install package
+* `rpm -e <Package Name>` remove installed package
+* `rpm -qa` all rpm packages
+
 ***
 
-## APT Command [Debian]
+## Debian Distribution
+
+### apt command
 
 * `apt update && apt upgrade` two commands you can use to keep all of your packages up to date in Debian or a Debian-based Linux distribution.
 * `apt search <Package>` search package in all repository
 * `apt install <Package>` install package
   * `apt install <Package1> <Package2>` install multi packages
-* `apt remove <Package>` delete package
-  * `apt purge <Package>` delete package with all files
+* `apt remove <Package>` remove installed package
+  * `apt purge <Package>` remove installed package with all files
 
-## DPKG Command [Debian]
+### dpkg command
 
 First download the package via `wget` or `curl`
 
 Then `dpkg` commands:
 
 * `dpkg -i <Package Name>` install package
-* `dpkg -r <Package Name>` delete package
+* `dpkg -r <Package Name>` remove installed package
 
 [Next: Vim Editor](./Vim%20Editor.md)
 
