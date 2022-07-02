@@ -28,11 +28,18 @@ root@ubuntu-os:~#
 
 ## Basic Commands
 
-* `echo Welcome to linux.` for print something
+print something
+
+* `echo Welcome to linux.`
+* `printf "hello\nworld\n"`
 
 ``` console
 root@Zold:~# echo Welcome to linux.
 Welcome to linux.
+
+root@Zold:~# printf "hello\nworld\n"
+hello
+world
 ```
 
 * `clear` clear terminal
