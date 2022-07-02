@@ -15,18 +15,18 @@ CentOS                 | rpm            | yum
 
 ## YUM Command [CentOS]
 
-* `yum install httpd [-y]` Download  & Install Package
-* `yum remove httpd` Remove package
-* `yum search jdk` Search in yum
-* `yum update` update all packages
+* `yum update && yum upgrade` two commands you can use to keep all of your packages up to date in CentOS Linux distribution.
+* `yum install <Package>` download & install package
+  * `yum install <Package> -y` Automatically answer yes for all questions.
+* `yum remove <Package>` Remove package from system
+* `yum search <Package>` Search in yum repositoy
 * `yum clean all` clean local cache
 
 ## RPM Command [CentOS]
 
-* `curl <url_of_package_rpm> -o <file_name>` Download Package
+* `curl <Url of Package RPM> -o <File Name on System>` Download Package
   * `curl https://rpmfind.net/linux/centos-stream/9-stream/BaseOS/x86_64/os/Packages/tree-1.8.0-6.el9.x86_64.rpm -o tree-1.8.0-6.el9.x86_64.rpm`
 * `rpm -ivh tree-1.8.0-6.el9.x86_64.rpm` Install Package
-* `tree /var/log` Try to use package
 * `rpm -e tree-1.8.0-6.el9.x86_64.rpm` Delete rpm package
 * `rpm -qa` → All rpms
 * `rpm -qa | grep tree` Get package from all packages
@@ -41,20 +41,21 @@ CentOS                 | rpm            | yum
 
 ## APT Command [Debian]
 
-* `apt update` update packages
-* `apt upgrade` upgrade packages
-* `apt search tree` search package in all repository
-* `apt install tree` install package
-  * `apt install tree python` install multi packages
-* `apt remove apache2` delete package
-* `apt purge apache2` delete package with all files
 * `apt update && apt upgrade` two commands you can use to keep all of your packages up to date in Debian or a Debian-based Linux distribution.
+* `apt search <Package>` search package in all repository
+* `apt install <Package>` install package
+  * `apt install <Package1> <Package2>` install multi packages
+* `apt remove <Package>` delete package
+  * `apt purge <Package>` delete package with all files
 
 ## DPKG Command [Debian]
 
-* `wget <lint_url>` download package via `wget`
-* `dpkg -i <name_of_package>` install package
-* `dpkg -r <name_of_package>` delete package
+First download the package via `wget` or `curl`
+
+Then `dpkg` commands:
+
+* `dpkg -i <Package Name>` install package
+* `dpkg -r <Package Name>` delete package
 
 [Next: Vim Editor](./Vim%20Editor.md)
 
