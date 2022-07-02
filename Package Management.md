@@ -48,6 +48,7 @@ CentOS                 | rpm            | yum
   * `apt install tree python` install multi packages
 * `apt remove apache2` delete package
 * `apt purge apache2` delete package with all files
+* `apt update && apt upgrade` two commands you can use to keep all of your packages up to date in Debian or a Debian-based Linux distribution.
 
 ## DPKG Command [Debian]
 

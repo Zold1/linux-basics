@@ -33,6 +33,7 @@ root@Zold:~# less script.sh
 * `grep -iR <word> *` Search in all files in working path and all directories with their files
 * `free -m | grep Mem` Search for a word from another command output
 * `grep "sudo chmod"` search for a sentence
+* `grep -v 'word'`
 
 ## Head & Tail
 
