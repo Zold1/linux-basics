@@ -28,9 +28,11 @@ Root    | root             | 0             | 0             | /root            | 
 Regular | zold, vagrant    | 1000 to 60000 | 1000 to 60000 | /home/{username} | /bin/bash
 Service | ftp, ssh, apache | 1 to 999      | 1 to 999      | /var/ftp etc     | /sbin/nologin
 
+***
+
 ## Show All Users
 
-`cat /etc/passwd` → show all users
+`cat /etc/passwd` show all users
 
 ``` console
 root@Zold:~# cat /etc/passwd
