@@ -23,7 +23,7 @@ Key | Mode
 i   | for switching to insert mode
 ESC | for switching to command mode
 
-* **Note:** When you open the vim editor, it will be in the command mode by default.
+**Note:** When you open the vim editor, it will be in the command mode by default.
 
 ***
 
@@ -33,7 +33,7 @@ ESC | for switching to command mode
 
 Command           | Explain
 ----------------- | -------
-`:w myprogram.c`  | save the current changes to a file. If you don't specify a name, changes will be saved to the current file.
+`:w <File Name>`  | save the current changes to a file. If you don't specify a name, changes will be saved to the current file.
 `:q`              | quits Vim. If you have unsaved changes, you will be asked whether or not you'd like to save your changes before quitting.
 `:q!`             | quit without saving unsaved changes.
 `:wq`             | save and quit.
@@ -44,7 +44,7 @@ Command           | Explain
 ----------------- | -------
 `gg`              | jump to the first line in file.
 `G`               | jump to last line in file
-`12G`             | Go to line 12 (change number to anything)
+`12G`             | Go to line 12 **change number to anything**
 
 ### Searching/Replacing
 
@@ -62,9 +62,9 @@ Command           | Explain
 Command             | Explain
 ------------------- | -------
 `dd` or `:d`        | deletes the current line
-`d10`               | deletes 10 lines (change number to anything)
-`yy` or `:y` or `Y` | (cut) the current line
-`p`                 | Paste the text you yanked or deleted
+`d10`               | deletes 10 lines **change number to anything**
+`yy` or `:y` or `Y` | cut the current line
+`p`                 | paste the text you yanked or deleted
 `x`                 | delete the character underneath the cursor
 
 ### Entering INSERT Mode
@@ -83,7 +83,7 @@ Command           | Explain
 ----------------- | -------
 `u`               | undo the last action
 `U`               | undo all recent changes made to the current line
-ctrl-r            | redo
+CTRL-R            | redo
 
 ### Others
 
