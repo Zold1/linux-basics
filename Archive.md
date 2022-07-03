@@ -4,6 +4,8 @@ we will use an archiving utility `tar` and `zip`
 
 `tar` in itself just bundles files together (the result is called a tarball), while `zip` applies compression as well.
 
+***
+
 ## Tar
 
 * `tar -czvf <Tar Name> <Directory>` compresse file/directory
