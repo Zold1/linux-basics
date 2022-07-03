@@ -52,6 +52,11 @@ The key's randomart image is:
 
 After that, two files will appear in the .ssh folder
 
+``` console
+root@Zold:~# ls .ssh
+id_rsa  id_rsa.pub
+```
+
 * **id_rsa** This is private key
 * **id_rsa.pub** This is public key
 
