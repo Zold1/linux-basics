@@ -94,6 +94,15 @@ Command           | Explain
 
 **Note:** For learn every thing about vim write `vimtutor` in console and read the documation
 
+***
+
+## Another Editors
+
+* **VS Code** by `code <file>` to open file or `code .` to open project folder
+* **gedit**
+  * first install it by `sudo apt install gedit`
+  * use it by `gedit <file>`
+
 [Next: Filters](./Filters.md)
 
 [Prev: Package Management](./Package%20Management.md)
