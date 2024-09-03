@@ -5,58 +5,58 @@ Welcome to the **Linux Basics** repository! This repository contains a comprehen
 ## Table of Contents
 
 ### 1. **Introduction to Linux**
-- [Linux Overview](./Introduction%20to%20Linux/Linux%20Overview.md)
-- [Why Linux?](./Introduction%20to%20Linux/Why%20Linux.md)
-- [Linux Distributions](./Introduction%20to%20Linux/Linux%20Distributions.md)
+- [Linux Overview](./01.%20Introduction%20to%20Linux/1.%20Linux%20Overview.md)
+- [Why Linux?](./01.%20Introduction%20to%20Linux/2.%20Why%20Linux.md)
+- [Linux Distributions](./01.%20Introduction%20to%20Linux/3.%20Linux%20Distributions.md)
 
 ### 2. **Getting Started with the Terminal**
-- [Terminal Basics](./Getting%20Started%20with%20the%20Terminal/Terminal%20Basics.md)
-- [Linux Paths](./Getting%20Started%20with%20the%20Terminal/Linux%20Paths.md)
-- [File System Overview](./Getting%20Started%20with%20the%20Terminal/File%20System%20Overview.md)
+- [Terminal Basics](./02.%20Getting%20Started%20with%20the%20Terminal/1.%20Terminal%20Basics.md)
+- [Linux Paths](./02.%20Getting%20Started%20with%20the%20Terminal/2.%20Linux%20Paths.md)
+- [File System Overview](./02.%20Getting%20Started%20with%20the%20Terminal/3.%20File%20System%20Overview.md)
 
 ### 3. **Working with Files and Directories**
-- [Files and Directories](./Working%20with%20Files%20and%20Directories/Files%20and%20Directories.md)
-- [File Permissions](./Working%20with%20Files%20and%20Directories/File%20Permissions.md)
-- [File Compression and Archiving](./Working%20with%20Files%20and%20Directories/File%20Compression%20and%20Archiving.md)
+- [Files and Directories](./03.%20Working%20with%20Files%20and%20Directories/1.%20Files%20and%20Directories.md)
+- [File Permissions](./03.%20Working%20with%20Files%20and%20Directories/2.%20File%20Permissions.md)
+- [File Compression and Archiving](./03.%20Working%20with%20Files%20and%20Directories/3.%20File%20Compression%20and%20Archiving.md)
 
 ### 4. **User and Group Management**
-- [Users and Groups](./User%20and%20Group%20Management/Users%20and%20Groups.md)
-- [Managing Permissions](./User%20and%20Group%20Management/Managing%20Permissions.md)
+- [Users and Groups](./04.%20User%20and%20Group%20Management/1.%20Users%20and%20Groups.md)
+- [Managing Permissions](./04.%20User%20and%20Group%20Management/2.%20Managing%20Permissions.md)
 
 ### 5. **Package Management**
-- [Introduction to Package Management](./Package%20Management/Introduction%20to%20Package%20Management.md)
-- [Using Package Managers](./Package%20Management/Using%20Package%20Managers/Readme.md)
-  - [APT (Debian/Ubuntu)](./Package%20Management/Using%20Package%20Managers/APT%20(Debian%20-%20Ubuntu).md)
-  - [YUM/DNF (RHEL/CentOS)](./Package%20Management/Using%20Package%20Managers/YUM%20-%20DNF%20(RHEL%20-%20CentOS).md)
-  - [Pacman (Arch)](./Package%20Management/Using%20Package%20Managers/Pacman%20(Arch).md)
+- [Introduction to Package Management](./05.%20Package%20Management/1.%20Introduction%20to%20Package%20Management.md)
+- [Using Package Managers](./05.%20Package%20Management/2.%20Using%20Package%20Managers/1.%20Readme.md)
+  - [APT (Debian/Ubuntu)](./05.%20Package%20Management/2.%20Using%20Package%20Managers/2.%20APT%20(Debian%20-%20Ubuntu).md)
+  - [YUM/DNF (RHEL/CentOS)](./05.%20Package%20Management/2.%20Using%20Package%20Managers/3.%20YUM%20-%20DNF%20(RHEL%20-%20CentOS).md)
+  - [Pacman (Arch)](./05.%20Package%20Management/2.%20Using%20Package%20Managers/4.%20Pacman%20(Arch).md)
 
 ### 6. **Text Editors**
-- [Vim Editor Basics](./Text%20Editors/Vim%20Editor%20Basics.md)
-- [Advanced Vim Usage](./Text%20Editors/Advanced%20Vim%20Usage.md)
-- [Other Editors: Nano, Emacs](./Text%20Editors/Other%20Editors%20(Nano,%20Emacs).md)
+- [Vim Editor Basics](./06.%20Text%20Editors/1.%20Vim%20Editor%20Basics.md)
+- [Advanced Vim Usage](./06.%20Text%20Editors/2.%20Advanced%20Vim%20Usage.md)
+- [Other Editors: Nano, Emacs](./06.%20Text%20Editors/3.%20Other%20Editors%20(Nano,%20Emacs).md)
 
 ### 7. **Data Processing**
-- [Filters](./Data%20Processing/Filters/Readme.md)
-  - [Common Text Processing Tools](./Data%20Processing/Filters/Common%20Text%20Processing%20Tools.md)
-- [Redirections](./Data%20Processing/Redirections.md)
+- [Filters](./07.%20Data%20Processing/1.%20Filters/1.%20Readme.md)
+  - [Common Text Processing Tools](./07.%20Data%20Processing/1.%20Filters/2.%20Common%20Text%20Processing%20Tools.md)
+- [Redirections](./07.%20Data%20Processing/2.%20Redirections.md)
 
 ### 8. **System Administration**
-- [Managing Services](./System%20Administration/Managing%20Services.md)
-- [Process Management](./System%20Administration/Process%20Management.md)
-- [Scheduling Tasks (Cron)](./System%20Administration/Scheduling%20Tasks%20(Cron).md)
-- [System Monitoring and Logging](./System%20Administration/System%20Monitoring%20and%20Logging.md)
+- [Managing Services](./08.%20System%20Administration/1.%20Managing%20Services.md)
+- [Process Management](./08.%20System%20Administration/2.%20Process%20Management.md)
+- [Scheduling Tasks (Cron)](./08.%20System%20Administration/3.%20Scheduling%20Tasks%20(Cron).md)
+- [System Monitoring and Logging](./08.%20System%20Administration/4.%20System%20Monitoring%20and%20Logging.md)
 
 ### 9. **Networking**
-- [Networking Basics](./Networking/Networking%20Basics.md)
-- [Networking Commands](./Networking/Networking%20Commands.md)
-- [SSH: Secure Shell](./Networking/SSH%20(Secure%20Shell).md)
-- [Networking Configuration](./Networking/Networking%20Configuration.md)
+- [Networking Basics](./09.%20Networking/1.%20Networking%20Basics.md)
+- [Networking Commands](./09.%20Networking/2.%20Networking%20Commands.md)
+- [SSH: Secure Shell](./09.%20Networking/3.%20SSH%20(Secure%20Shell).md)
+- [Networking Configuration](./09.%20Networking/4.%20Networking%20Configuration.md)
 
 ### 10. **Best Practices**
-- [Security Best Practices](./Best%20Practices/Security%20Best%20Practices.md)
-- [System Maintenance](./Best%20Practices/System%20Maintenance.md)
-- [Backup and Recovery](./Best%20Practices/Backup%20and%20Recovery.md)
-- [Scripting Basics](./Best%20Practices/Scripting%20Basics.md)
+- [Security Best Practices](./10.%20Best%20Practices/1.%20Security%20Best%20Practices.md)
+- [System Maintenance](./10.%20Best%20Practices/2.%20System%20Maintenance.md)
+- [Backup and Recovery](./10.%20Best%20Practices/3.%20Backup%20and%20Recovery.md)
+- [Scripting Basics](./10.%20Best%20Practices/4.%20Scripting%20Basics.md)
 
 ## About
 
