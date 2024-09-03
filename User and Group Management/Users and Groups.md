@@ -1,0 +1,236 @@
+# Users and Groups
+
+In Linux, users and groups are fundamental to managing access control, defining who can access what resources, and ensuring system security. This page will explore how to manage users and groups, including creating, modifying, and deleting them, as well as setting appropriate permissions.
+
+## Understanding Users and Groups
+
+### Users
+
+A user in Linux is an account that can log in to the system and perform tasks. Each user has a unique username, user ID (UID), and a home directory where personal files and configurations are stored.
+
+### Groups
+
+A group is a collection of users. Groups are used to simplify the management of permissions. Instead of assigning permissions to each user individually, you can assign them to a group, and all members of that group inherit those permissions.
+
+### System vs. Regular Users
+
+- **System Users**: These accounts are used by system processes and services. They typically have a UID below 1000 and do not have a home directory.
+- **Regular Users**: These are the accounts created for human users. They usually have a UID starting from 1000 and a home directory in `/home`.
+
+## Managing Users
+
+### Adding a New User
+
+To add a new user, use the `useradd` command:
+
+```bash
+sudo useradd username
+```
+
+- By default, this command creates a user with the specified `username`, assigns the next available UID, and creates a home directory at `/home/username`.
+
+#### Creating a User with Specific Options
+
+- **Specify Home Directory**:
+
+  ```bash
+  sudo useradd -m -d /custom/home/dir username
+  ```
+
+  - `-m`: Creates a home directory.
+  - `-d`: Specifies a custom home directory.
+
+- **Assigning a Shell**:
+
+  ```bash
+  sudo useradd -s /bin/bash username
+  ```
+
+  - `-s`: Specifies the login shell.
+
+- **Setting an Expiry Date**:
+
+  ```bash
+  sudo useradd -e 2024-12-31 username
+  ```
+
+  - `-e`: Specifies an expiry date for the account.
+
+### Setting a Password for a User
+
+To set a password for a user, use the `passwd` command:
+
+```bash
+sudo passwd username
+```
+
+This command prompts you to enter and confirm a password for the specified user.
+
+### Modifying User Accounts
+
+To modify an existing user account, use the `usermod` command:
+
+- **Change a User's Home Directory**:
+
+  ```bash
+  sudo usermod -d /new/home/dir -m username
+  ```
+
+  - `-d`: Specifies the new home directory.
+  - `-m`: Moves the content of the old home directory to the new one.
+
+- **Change a User's Shell**:
+
+  ```bash
+  sudo usermod -s /bin/zsh username
+  ```
+
+  - `-s`: Specifies the new login shell.
+
+- **Lock or Unlock a User Account**:
+
+  ```bash
+  sudo usermod -L username   # Lock
+  sudo usermod -U username   # Unlock
+  ```
+
+  - `-L`: Locks the user account.
+  - `-U`: Unlocks the user account.
+
+### Deleting a User
+
+To delete a user, use the `userdel` command:
+
+```bash
+sudo userdel username
+```
+
+- **Delete a User and Their Home Directory**:
+
+  ```bash
+  sudo userdel -r username
+  ```
+
+  - `-r`: Removes the user's home directory and mail spool.
+
+## Managing Groups
+
+### Adding a New Group
+
+To add a new group, use the `groupadd` command:
+
+```bash
+sudo groupadd groupname
+```
+
+This creates a new group with the specified `groupname`.
+
+### Adding a User to a Group
+
+To add a user to a group, use the `usermod` command with the `-aG` option:
+
+```bash
+sudo usermod -aG groupname username
+```
+
+- `-aG`: Adds the user to the specified group(s) without removing them from other groups.
+
+### Viewing a User's Groups
+
+To view the groups a user belongs to, use the `groups` command:
+
+```bash
+groups username
+```
+
+### Changing a User's Primary Group
+
+A user's primary group is the group that owns files created by the user. To change the primary group, use the `usermod` command:
+
+```bash
+sudo usermod -g groupname username
+```
+
+- `-g`: Specifies the new primary group.
+
+### Deleting a Group
+
+To delete a group, use the `groupdel` command:
+
+```bash
+sudo groupdel groupname
+```
+
+This removes the specified group from the system.
+
+## Understanding `/etc/passwd`, `/etc/shadow`, and `/etc/group`
+
+### `/etc/passwd`
+
+The `/etc/passwd` file contains user account information, including usernames, UIDs, home directories, and default shells. Each line represents a user, with fields separated by colons (`:`).
+
+Example entry:
+
+```plaintext
+username:x:1001:1001::/home/username:/bin/bash
+```
+
+### `/etc/shadow`
+
+The `/etc/shadow` file stores hashed passwords and related information. It is readable only by the root user for security reasons.
+
+Example entry:
+
+```plaintext
+username:$6$hashvalue:18442:0:99999:7:::
+```
+
+### `/etc/group`
+
+The `/etc/group` file contains group information, including group names, GIDs, and group members. Each line represents a group.
+
+Example entry:
+
+```plaintext
+groupname:x:1001:user1,user2
+```
+
+## Practical Examples
+
+### Creating a New User with a Group
+
+To create a new user and add them to an existing group:
+
+```bash
+sudo useradd -m -s /bin/bash -G groupname username
+sudo passwd username
+```
+
+### Changing a User's Primary Group and Adding to Secondary Groups
+
+To change a user's primary group and add them to multiple secondary groups:
+
+```bash
+sudo usermod -g primarygroup -G group1,group2 username
+```
+
+### Locking an Inactive User Account
+
+To lock an account that hasn't been used recently:
+
+```bash
+sudo passwd -l username
+```
+
+This locks the account until an administrator unlocks it.
+
+## Best Practices for User and Group Management
+
+- **Least Privilege Principle**: Always assign the minimum necessary permissions to users and groups.
+- **Regularly Audit Accounts**: Periodically review user accounts and groups to ensure that only active and necessary accounts exist.
+- **Use Strong Passwords**: Enforce strong password policies to enhance security.
+- **Lock Unused Accounts**: Lock or remove accounts that are no longer in use to prevent unauthorized access.
+
+## Conclusion
+
+Understanding and effectively managing users and groups in Linux is crucial for system administration. By mastering commands like `useradd`, `usermod`, `groupadd`, and understanding the significance of files like `/etc/passwd` and `/etc/group`, you can ensure that your system is secure and that users have the appropriate level of access.
