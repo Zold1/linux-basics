@@ -1,3 +1,5 @@
+![Comprehensive Linux Basics: A complete guide covering foundational Linux concepts, core tasks, and best practices.](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=Linux%20Basics&section=header&desc=A%20complete%20guide%20covering%20foundational%20Linux%20concepts,%20core%20tasks,%20and%20best%20practices&descAlignY=55&fontAlignY=35&descAlign=50&descSize=20&stroke=555&animation=fadeIn&fontSize=50 "Linux Basics")
+
 # Linux Basics
 
 Welcome to the **Linux Basics** repository! This repository contains a comprehensive summary of foundational Linux concepts and core tasks. Whether you're new to Linux or looking to solidify your understanding, this resource will help you master essential Linux commands, tools, and best practices.
