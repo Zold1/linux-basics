@@ -6,7 +6,7 @@ Welcome to the **Linux Basics** repository! This repository contains a comprehen
 
 💡 **Pro Tip**: Star this repository to keep it handy for future reference!
 
-## Table of Contents
+## 📚 Table of Contents
 
 ### 1. **Introduction to Linux**
 - [Linux Overview](./01.%20Introduction%20to%20Linux/1.%20Linux%20Overview.md)
@@ -62,18 +62,18 @@ Welcome to the **Linux Basics** repository! This repository contains a comprehen
 - [Backup and Recovery](./10.%20Best%20Practices/3.%20Backup%20and%20Recovery.md)
 - [Scripting Basics](./10.%20Best%20Practices/4.%20Scripting%20Basics.md)
 
-## About
+## ℹ️ About
 
 This repository is designed to serve as a learning tool and quick reference for anyone working with Linux. Each section covers a specific topic, providing explanations, examples, and commands that are crucial for everyday Linux use.
 
-## How to Use
+## ❓ How to Use
 
 Simply click on any topic in the Table of Contents to access the detailed notes. Each section is presented in a Markdown file for easy reading and modification.
 
-## Contributing
+## 🚩 Contributing
 
 Contributions are welcome! If you have suggestions for improvements or additional topics, please feel free to open an issue or submit a pull request.
 
-## License
+## 📝 License
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
